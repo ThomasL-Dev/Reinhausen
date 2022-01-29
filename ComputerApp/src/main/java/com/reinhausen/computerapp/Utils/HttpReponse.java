@@ -104,13 +104,13 @@ public class HttpReponse {
                 try {
                     DATA.remove(0);
                 }catch (Exception e){
-                    return "Null";
+                    return e.toString();
                 }
             }
-            return DATA.toString().replace(", ", " : ").replace("[", "").replace("]", "");
         }catch (Exception e){
-            return "Null";
+            return e.toString();
         }
+        return DATA.toString().replace("[", "").replace("]", "");
     }
 
     protected void SortReqValues() {

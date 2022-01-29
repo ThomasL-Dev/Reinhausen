@@ -13,9 +13,9 @@ public class RootStage extends Stage {
 
 
     public RootStage() throws IOException {
-        this.setTitle(RootApplication.class.getPackageName() + " Root Stage");
+        this.setTitle("Reinhausen");
 
-        FXMLLoader fxmlLoader = new FXMLLoader(RootApplication.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RootApplication.class.getResource("admin.fxml"));
         this.setScene(new Scene(fxmlLoader.load(), 1280, 720));
 
         this.show();

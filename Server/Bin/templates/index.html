@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+    <h1>InDev : </h1>
+
+    {% for info in init_page %}
+        <h3><li>{{ info }} : '{{ init_page[info] }}'</li></h3>
+    {% endfor %}
+
+    <br>
+    <br>
+
+    <h1>Routes : </h1>
+    {% for route in routes %}
+        <a href="{{ routes[route]['uri'] }}"><h3><li>{{ routes[route]['uri'] }}</li></h3></a>
+    {% endfor %}
+
+    <br>
+
+    {% for api in apis %}
+        <a href="{{ apis[api]['uri'] }}"><h3><li>{{ apis[api]['uri'] }}</li></h3></a>
+    {% endfor %}
+
+
+
+</body>
+</html>

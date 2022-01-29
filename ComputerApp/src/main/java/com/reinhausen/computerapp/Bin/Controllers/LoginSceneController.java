@@ -5,6 +5,7 @@ import com.reinhausen.computerapp.Utils.HttpReponse;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.util.Objects;
@@ -17,7 +18,7 @@ public class LoginSceneController extends ControllerObject{
     public Label lbl_error;
 
     public TextField txtfield_login;
-    public TextField txtfield_pwd;
+    public PasswordField txtfield_pwd;
 
     public Button btn_conn;
 
